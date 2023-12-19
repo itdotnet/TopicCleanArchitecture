@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4FD3C8E4-1225-4F3A-BF02-2F6EA43EB9B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9ED560E6-C712-413F-B86E-818CDE54FC9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{595E1D87-AAFB-46E3-8E74-0DC28746B5D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{19C2CA54-730D-4E51-AE0D-8627C8F1BA8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0AFD0895-E16A-4B6D-9A4C-2B443EACEE30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{83905EBF-3E40-488F-8FDD-E7737C33ACB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicSampleSite.Domain", "TopicSampleSite.Domain\TopicSampleSite.Domain.csproj", "{1FFA3CF7-1997-4CD7-B732-F7E5FD708D0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FFA3CF7-1997-4CD7-B732-F7E5FD708D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FFA3CF7-1997-4CD7-B732-F7E5FD708D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FFA3CF7-1997-4CD7-B732-F7E5FD708D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FFA3CF7-1997-4CD7-B732-F7E5FD708D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{595E1D87-AAFB-46E3-8E74-0DC28746B5D1} = {4FD3C8E4-1225-4F3A-BF02-2F6EA43EB9B4}
+		{19C2CA54-730D-4E51-AE0D-8627C8F1BA8C} = {4FD3C8E4-1225-4F3A-BF02-2F6EA43EB9B4}
+		{0AFD0895-E16A-4B6D-9A4C-2B443EACEE30} = {4FD3C8E4-1225-4F3A-BF02-2F6EA43EB9B4}
+		{83905EBF-3E40-488F-8FDD-E7737C33ACB9} = {4FD3C8E4-1225-4F3A-BF02-2F6EA43EB9B4}
+		{1FFA3CF7-1997-4CD7-B732-F7E5FD708D0B} = {19C2CA54-730D-4E51-AE0D-8627C8F1BA8C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {465E1AE2-EA8C-4A25-AB7D-B04E7F60E324}
+	EndGlobalSection
+EndGlobal
