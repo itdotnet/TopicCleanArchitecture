@@ -9,6 +9,7 @@ namespace TopicCleanArchitecture.Application.Features.Category.Commands.UpdateCa
 {
     public class UpdateCategoryCommand : IRequest<Unit>
     {
+        public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
     }
 }

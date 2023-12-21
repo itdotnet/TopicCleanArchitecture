@@ -5,11 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TopicCleanArchitecture.Application.Contracts.Persistence;
+using TopicCleanArchitecture.Domain.Common;
 using TopicCleanArchitecture.Persistence.DatabaseContext;
 
 namespace TopicCleanArchitecture.Persistence.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
         protected readonly TopicDatabaseContext _context;
 
@@ -32,12 +33,12 @@ namespace TopicCleanArchitecture.Persistence.Repositories
 
         public async Task<IReadOnlyList<T>> GetAsync()
         {
-            return await _context.Set<T>().ToListAsync();
+            return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
 
         public async Task<T> GetByIdAsync(int id)
         {
-            var topic=await _context.Set<T>().FindAsync(id);
+            var topic=await _context.Set<T>().AsNoTracking().FirstOrDefaultAsync(x=>x.Id==id);
             return topic!;
         }
 

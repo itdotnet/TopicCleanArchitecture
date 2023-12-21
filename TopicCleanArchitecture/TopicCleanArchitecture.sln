@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCleanArchitecture.Persistence", "TopicCleanArchitecture.Persistence\TopicCleanArchitecture.Persistence.csproj", "{30658A0B-FEFC-4B34-AD6B-BE737A0E001D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCleanArchitecture.Infrastructure", "TopicCleanArchitecture.Infrastructure\TopicCleanArchitecture.Infrastructure.csproj", "{C1077B1A-DB87-49B1-A4BB-D110681FF874}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{30658A0B-FEFC-4B34-AD6B-BE737A0E001D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30658A0B-FEFC-4B34-AD6B-BE737A0E001D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30658A0B-FEFC-4B34-AD6B-BE737A0E001D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1077B1A-DB87-49B1-A4BB-D110681FF874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1077B1A-DB87-49B1-A4BB-D110681FF874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1077B1A-DB87-49B1-A4BB-D110681FF874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1077B1A-DB87-49B1-A4BB-D110681FF874}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{F74CB008-489C-4387-92A9-DAB8EAC3722C} = {C7E26715-336D-4CDF-BC8D-E43F35DE3906}
 		{65F08136-F16E-43EA-8144-A96AD98904C9} = {C7E26715-336D-4CDF-BC8D-E43F35DE3906}
 		{30658A0B-FEFC-4B34-AD6B-BE737A0E001D} = {0DD80900-EEFF-4087-AADC-72A9FA9F05EE}
+		{C1077B1A-DB87-49B1-A4BB-D110681FF874} = {0DD80900-EEFF-4087-AADC-72A9FA9F05EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EF6B1574-B1B5-43D8-848E-DEC6A70EA98C}
