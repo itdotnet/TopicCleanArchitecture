@@ -17,7 +17,7 @@ namespace TopicCleanArchitecture.Persistence.Repositories
         }
         public async Task<bool> IsLeaveTypeUnique(string name)
         {
-            return await _context.Categories.AnyAsync(q => q.Name == name);
+            return !await _context.Categories.AnyAsync(q => q.Name == name);
         }
     }
 }
