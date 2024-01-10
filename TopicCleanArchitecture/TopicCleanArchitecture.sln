@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.Api"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCleanArchitecture.Application.UnitTests", "TopicCleanArchitecture.Application.UnitTests\TopicCleanArchitecture.Application.UnitTests.csproj", "{370CEBDC-2186-41AB-9B4D-ED1461FA42E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCleanArchitecture.Persistence.IntegrationTests", "TopicCleanArchitecture.Persistence.IntegrationTests\TopicCleanArchitecture.Persistence.IntegrationTests.csproj", "{DE06DF44-4AD3-4751-AEE3-E95F6B3F3C57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{370CEBDC-2186-41AB-9B4D-ED1461FA42E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{370CEBDC-2186-41AB-9B4D-ED1461FA42E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{370CEBDC-2186-41AB-9B4D-ED1461FA42E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE06DF44-4AD3-4751-AEE3-E95F6B3F3C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE06DF44-4AD3-4751-AEE3-E95F6B3F3C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE06DF44-4AD3-4751-AEE3-E95F6B3F3C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE06DF44-4AD3-4751-AEE3-E95F6B3F3C57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{C1077B1A-DB87-49B1-A4BB-D110681FF874} = {0DD80900-EEFF-4087-AADC-72A9FA9F05EE}
 		{3FD09C79-E9E6-4B9D-892C-5A3E2CA216F9} = {8ABDF98D-31EC-4C8A-B4C7-11A16E426FC5}
 		{370CEBDC-2186-41AB-9B4D-ED1461FA42E8} = {1EC6F01C-B6E9-4143-B919-9C2C12C99096}
+		{DE06DF44-4AD3-4751-AEE3-E95F6B3F3C57} = {1EC6F01C-B6E9-4143-B919-9C2C12C99096}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EF6B1574-B1B5-43D8-848E-DEC6A70EA98C}
