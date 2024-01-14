@@ -1,0 +1,60 @@
+﻿@page "/categories/"
+
+<h3>categories</h3>
+
+<div class="m-2 d-fix justify-content-end">
+    <button @onclick="CreateCategory" class="btn btn-success">Add Category</button>
+</div>
+
+
+@if (!string.IsNullOrEmpty(Message))
+{
+    <div class="alert alert-danger">
+        @Message
+    </div>
+}
+
+@if (Categories == null)
+{
+    <p>Loading Data...</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Default Days
+                </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Categories)
+            {
+                <tr>
+                    <td>@category.Id </td>
+                    <td>@category.Name </td>
+                    <td>
+                        <AuthorizeView Roles="Administrator">
+                            @* <button @onclick=@(() => AllocateLeaveType(leaveType.Id))
+                                    class="btn btn-dark">
+                                Allocate Leave
+                            </button> *@
+                            <button @onclick="@(() => EditCategory(category.Id))" class="btn btn-warning">Edit</button>
+                            <button @onclick="@(() => DeleteCategory(category.Id))" class="btn btn-danger">Delete</button>
+                        </AuthorizeView>
+                        <button @onclick="@(() => DetailsCategory(category.Id))" class="btn btn-info">Details</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}

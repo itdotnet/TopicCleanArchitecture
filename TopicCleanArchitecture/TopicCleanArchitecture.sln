@@ -27,9 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.Api"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.Application.UnitTests", "TopicCleanArchitecture.Application.UnitTests\TopicCleanArchitecture.Application.UnitTests.csproj", "{370CEBDC-2186-41AB-9B4D-ED1461FA42E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCleanArchitecture.Persistence.IntegrationTests", "TopicCleanArchitecture.Persistence.IntegrationTests\TopicCleanArchitecture.Persistence.IntegrationTests.csproj", "{DE06DF44-4AD3-4751-AEE3-E95F6B3F3C57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.Persistence.IntegrationTests", "TopicCleanArchitecture.Persistence.IntegrationTests\TopicCleanArchitecture.Persistence.IntegrationTests.csproj", "{DE06DF44-4AD3-4751-AEE3-E95F6B3F3C57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCleanArchitecture.BlazorUI", "TopicCleanArchitecture.BlazorUI\TopicCleanArchitecture.BlazorUI.csproj", "{097F07FA-33EE-456D-B070-7CE9677C20CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.BlazorUI", "TopicCleanArchitecture.BlazorUI\TopicCleanArchitecture.BlazorUI.csproj", "{097F07FA-33EE-456D-B070-7CE9677C20CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
