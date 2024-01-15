@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.Pers
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.BlazorUI", "TopicCleanArchitecture.BlazorUI\TopicCleanArchitecture.BlazorUI.csproj", "{097F07FA-33EE-456D-B070-7CE9677C20CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCleanArchitecture.Identity", "TopicCleanArchitecture.Identity\TopicCleanArchitecture.Identity.csproj", "{4E3DF57C-0F26-44CF-8F14-B6C5756323D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{097F07FA-33EE-456D-B070-7CE9677C20CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{097F07FA-33EE-456D-B070-7CE9677C20CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{097F07FA-33EE-456D-B070-7CE9677C20CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E3DF57C-0F26-44CF-8F14-B6C5756323D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3DF57C-0F26-44CF-8F14-B6C5756323D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3DF57C-0F26-44CF-8F14-B6C5756323D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3DF57C-0F26-44CF-8F14-B6C5756323D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{370CEBDC-2186-41AB-9B4D-ED1461FA42E8} = {1EC6F01C-B6E9-4143-B919-9C2C12C99096}
 		{DE06DF44-4AD3-4751-AEE3-E95F6B3F3C57} = {1EC6F01C-B6E9-4143-B919-9C2C12C99096}
 		{097F07FA-33EE-456D-B070-7CE9677C20CA} = {3F64E535-38DA-4EDE-92FD-60B507AE6819}
+		{4E3DF57C-0F26-44CF-8F14-B6C5756323D3} = {0DD80900-EEFF-4087-AADC-72A9FA9F05EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EF6B1574-B1B5-43D8-848E-DEC6A70EA98C}
