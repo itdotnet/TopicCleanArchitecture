@@ -2,6 +2,7 @@ using TopicCleanArchitecture.Api.Middleware;
 using TopicCleanArchitecture.Application;
 using TopicCleanArchitecture.Infrastructure;
 using TopicCleanArchitecture.Persistence;
+using TopicCleanArchitecture.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddPersistenceServices(builder.Configuration);
+builder.Services.AddIdentityServices(builder.Configuration);
 
 builder.Services.AddControllers();
 
@@ -37,6 +39,7 @@ app.UseHttpsRedirection();
 
 app.UseCors("all");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

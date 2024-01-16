@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TopicCleanArchitecture.Application\TopicCleanArchitecture.Application.csproj" />
+    <ProjectReference Include="..\TopicCleanArchitecture.Identity\TopicCleanArchitecture.Identity.csproj" />
     <ProjectReference Include="..\TopicCleanArchitecture.Infrastructure\TopicCleanArchitecture.Infrastructure.csproj" />
     <ProjectReference Include="..\TopicCleanArchitecture.Persistence\TopicCleanArchitecture.Persistence.csproj" />
   </ItemGroup>
