@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TopicCleanArchitecture.Application.Features.Category.Commands.CreateCategory;
 using TopicCleanArchitecture.Application.Features.Category.Commands.DeleteCategory;
@@ -12,6 +13,7 @@ namespace TopicCleanArchitecture.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoriesController : ControllerBase
     {
         private readonly IMediator _mediator;
