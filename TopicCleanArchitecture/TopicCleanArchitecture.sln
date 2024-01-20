@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.Pers
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.BlazorUI", "TopicCleanArchitecture.BlazorUI\TopicCleanArchitecture.BlazorUI.csproj", "{097F07FA-33EE-456D-B070-7CE9677C20CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicCleanArchitecture.Identity", "TopicCleanArchitecture.Identity\TopicCleanArchitecture.Identity.csproj", "{4E3DF57C-0F26-44CF-8F14-B6C5756323D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicCleanArchitecture.Identity", "TopicCleanArchitecture.Identity\TopicCleanArchitecture.Identity.csproj", "{4E3DF57C-0F26-44CF-8F14-B6C5756323D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
