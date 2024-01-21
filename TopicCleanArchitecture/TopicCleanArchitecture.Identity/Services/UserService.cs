@@ -16,28 +16,30 @@ namespace TopicCleanArchitecture.Identity.Services
 
         public UserService(UserManager<ApplicationUser> userManager)
         {
-            this._userManager = userManager;
+            _userManager = userManager;
         }
 
         public async Task<Employee> GetEmployee(string userId)
         {
             var employee = await _userManager.FindByIdAsync(userId);
-            return new Employee {
-                Email=employee.Email,
-                Id=employee.Id,
-                Firstname=employee.FirstName,
-                Lastname=employee.LastName
+            return new Employee
+            {
+                Email = employee.Email,
+                Id = employee.Id,
+                Firstname = employee.FirstName,
+                Lastname = employee.LastName
             };
         }
 
         public async Task<List<Employee>> GetEmployees()
         {
             var employees = await _userManager.GetUsersInRoleAsync("Employee");
-            return employees.Select(employee => new Employee {
-                Email = employee.Email,
-                Id = employee.Id,
-                Firstname = employee.FirstName,
-                Lastname = employee.LastName
+            return employees.Select(q => new Employee
+            {
+                Id = q.Id,
+                Email = q.Email,
+                Firstname = q.FirstName,
+                Lastname = q.LastName
             }).ToList();
         }
     }

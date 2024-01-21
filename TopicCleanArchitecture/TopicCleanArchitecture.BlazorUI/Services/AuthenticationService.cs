@@ -9,10 +9,11 @@ namespace TopicCleanArchitecture.BlazorUI.Services
     public class AuthenticationService : BaseHttpService, IAuthenticationService
     {
         private readonly AuthenticationStateProvider _authenticationStateProvider;
-
-        public AuthenticationService(IClient client, ILocalStorageService localStorage,AuthenticationStateProvider authenticationStateProvider) : base(client, localStorage)
+        public AuthenticationService(IClient client,
+            ILocalStorageService localStorage,
+            AuthenticationStateProvider authenticationStateProvider) : base(client, localStorage)
         {
-            this._authenticationStateProvider = authenticationStateProvider;
+            _authenticationStateProvider = authenticationStateProvider;
         }
 
         public async Task<bool> AuthenticateAsync(string email, string password)
@@ -35,8 +36,8 @@ namespace TopicCleanArchitecture.BlazorUI.Services
             {
                 return false;
             }
-        }
 
+        }
         public async Task Logout()
         {
             // remove claims in Blazor and invalidate login state

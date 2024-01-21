@@ -9,7 +9,8 @@ namespace TopicCleanArchitecture.BlazorUI.Services
     public class CategoryService : BaseHttpService, ICategoryService
     {
         private readonly IMapper _mapper;
-        public CategoryService(IClient client, IMapper mapper, ILocalStorageService localStorage) : base(client,localStorage)
+
+        public CategoryService(IClient client, IMapper mapper, ILocalStorageService localStorageService) : base(client, localStorageService)
         {
             this._mapper = mapper;
         }

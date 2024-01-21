@@ -13,7 +13,7 @@ namespace TopicCleanArchitecture.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class CategoriesController : ControllerBase
     {
         private readonly IMediator _mediator;
