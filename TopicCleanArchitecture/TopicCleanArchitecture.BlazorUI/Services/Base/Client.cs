@@ -4,7 +4,7 @@
     {
         public HttpClient HttpClient { 
             get { 
-                return HttpClient;
+                return _httpClient;
             }
         }
     }

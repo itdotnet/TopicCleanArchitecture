@@ -115,10 +115,12 @@ namespace TopicCleanArchitecture.Identity.Services
                issuer: _jwtSettings.Issuer,
                audience: _jwtSettings.Audience,
                claims: claims,
-               expires: DateTime.Now.AddDays(1),
+               notBefore: DateTime.UtcNow,
+               expires: DateTime.UtcNow.AddMinutes(_jwtSettings.DurationInMinutes),
                signingCredentials: signingCredentials);
             return jwtSecurityToken;
         }
 
+       
     }
 }
