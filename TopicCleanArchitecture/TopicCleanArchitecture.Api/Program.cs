@@ -5,10 +5,15 @@ using TopicCleanArchitecture.Persistence;
 using TopicCleanArchitecture.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Host.UseSerilog((context, loggerConfig) =>loggerConfig
+    .WriteTo.Console()
+    .ReadFrom.Configuration(context.Configuration));
 
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
@@ -23,6 +28,8 @@ builder.Services.AddCors(options =>
     .AllowAnyHeader()
     .AllowAnyMethod());
 });
+
+builder.Services.AddHttpContextAccessor();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -65,6 +72,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+    
+app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 
