@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TopicCleanArchitecture.Application.Contracts.Identity;
 using TopicCleanArchitecture.Domain;
 using TopicCleanArchitecture.Domain.Common;
 
@@ -11,9 +12,11 @@ namespace TopicCleanArchitecture.Persistence.DatabaseContext
 {
     public class TopicDatabaseContext:DbContext
     {
-        public TopicDatabaseContext(DbContextOptions<TopicDatabaseContext> options) : base(options)
-        {
+        private readonly IUserService _userService;
 
+        public TopicDatabaseContext(DbContextOptions<TopicDatabaseContext> options,IUserService userService) : base(options)
+        {
+            this._userService = userService;
         }
 
         public DbSet<Category> Categories { get; set; }
@@ -31,10 +34,11 @@ namespace TopicCleanArchitecture.Persistence.DatabaseContext
                 .Where(q => q.State == EntityState.Added || q.State == EntityState.Modified))
             {
                 entry.Entity.DateModified = DateTime.Now;
-
+                entry.Entity.ModifiedBy = _userService.UserId;
                 if (entry.State == EntityState.Added)
                 {
                     entry.Entity.DateCreated = DateTime.Now;
+                    entry.Entity.CreatedBy = _userService.UserId;
                 }
             }
 

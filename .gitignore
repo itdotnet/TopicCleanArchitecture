@@ -396,5 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-
-/.gitignore
+/TopicCleanArchitecture/TopicCleanArchitecture.Api/appsettings.json
