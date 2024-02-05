@@ -1,3 +1,4 @@
+using Blazored.Toast.Services;
 using Microsoft.AspNetCore.Components;
 using TopicCleanArchitecture.BlazorUI.Contracts;
 using TopicCleanArchitecture.BlazorUI.Models.Categories;
@@ -10,6 +11,8 @@ namespace TopicCleanArchitecture.BlazorUI.Pages.Categories
         NavigationManager _navManager { get; set; }
         [Inject]
         ICategoryService _client { get; set; }
+        [Inject]
+        IToastService toastService { get; set; }
         public string Message { get; private set; }
 
         CategoryVM category = new CategoryVM();
@@ -18,6 +21,7 @@ namespace TopicCleanArchitecture.BlazorUI.Pages.Categories
             var response = await _client.CreateCategory(category);
             if (response.Success)
             {
+                toastService.ShowSuccess("Category Created Successfully");
                 _navManager.NavigateTo("/categories/");
             }
             Message = response.Message;

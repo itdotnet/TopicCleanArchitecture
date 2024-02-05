@@ -1,6 +1,7 @@
 using TopicCleanArchitecture.BlazorUI.Contracts;
 using TopicCleanArchitecture.BlazorUI.Models.Categories;
 using Microsoft.AspNetCore.Components;
+using Blazored.Toast.Services;
 
 namespace TopicCleanArchitecture.BlazorUI.Pages.Categories
 {
@@ -11,6 +12,8 @@ namespace TopicCleanArchitecture.BlazorUI.Pages.Categories
 
         [Inject]
         public ICategoryService CategoryService { get; set; }
+        [Inject]
+        IToastService toastService { get; set; }
 
         public List<CategoryVM> Categories { get; private set; }
         public string Message { get; set; } = string.Empty;
@@ -35,7 +38,8 @@ namespace TopicCleanArchitecture.BlazorUI.Pages.Categories
             var response = await CategoryService.DeleteCategory(id);
             if (response.Success)
             {
-                StateHasChanged();
+                toastService.ShowSuccess("Category Deleted Successfully");
+                await OnInitializedAsync();
             }
             else
             {
